@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum - Naomi Osaka</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .pdf-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 40px;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #6a0dad;
+            padding-bottom: 20px;
+        }
+        
+        .header h1 {
+            color: #6a0dad;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 1.1rem;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+        }
+        
+        .section-title {
+            color: #6a0dad;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+        }
+        
+        .info-grid {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .info-label {
+            font-weight: bold;
+            color: #555;
+        }
+        
+        .info-value {
+            color: #333;
+        }
+        
+        .achievement-list {
+            list-style-type: none;
+        }
+        
+        .achievement-list li {
+            margin-bottom: 10px;
+            padding-left: 20px;
+            position: relative;
+        }
+        
+        .achievement-list li:before {
+            content: "•";
+            color: #6a0dad;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        
+        .stat-item {
+            background-color: #f9f5ff;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #6a0dad;
+        }
+        
+        .stat-label {
+            color: #666;
+            margin-top: 5px;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            color: #666;
+            font-size: 0.9rem;
+        }
+        
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .pdf-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="pdf-container">
+        <div class="header">
+            <h1>Naomi Osaka</h1>
+            <p>Tenista Profesional - Cuatro veces Campeona de Grand Slam</p>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Información Personal</h2>
+            <div class="info-grid">
+                <div class="info-label">Fecha de Nacimiento:</div>
+                <div class="info-value">16 de octubre de 1997</div>
+                
+                <div class="info-label">Lugar de Nacimiento:</div>
+                <div class="info-value">Chūō-ku, Osaka, Japón</div>
+                
+                <div class="info-label">Nacionalidad:</div>
+                <div class="info-value">Japonesa</div>
+                
+                <div class="info-label">Residencia:</div>
+                <div class="info-value">Beverly Hills, California, Estados Unidos</div>
+                
+                <div class="info-label">Altura:</div>
+                <div class="info-value">1,80 m (5 ft 11 in)</div>
+                
+                <div class="info-label">Peso:</div>
+                <div class="info-value">69 kg (152 lb)</div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Estadísticas Profesionales</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">4</div>
+                    <div class="stat-label">Títulos de Grand Slam</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">7</div>
+                    <div class="stat-label">Títulos WTA</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">1</div>
+                    <div class="stat-label">Número 1 Mundial</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">$21M+</div>
+                    <div class="stat-label">Ganancias en Premios</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Trayectoria Profesional</h2>
+            <ul class="achievement-list">
+                <li><strong>2013:</strong> Debut profesional a los 16 años</li>
+                <li><strong>2016:</strong> Primera final WTA en el Toray Pan Pacific Open</li>
+                <li><strong>2018:</strong> Primer título de Grand Slam en el US Open</li>
+                <li><strong>2019:</strong> Segundo título de Grand Slam en el Abierto de Australia</li>
+                <li><strong>2020:</strong> Tercer título de Grand Slam en el US Open</li>
+                <li><strong>2021:</strong> Cuarto título de Grand Slam en el Abierto de Australia</li>
+                <li><strong>2021:</strong> Encendió el pebetero en los Juegos Olímpicos de Tokio</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Títulos de Grand Slam</h2>
+            <ul class="achievement-list">
+                <li><strong>US Open 2018:</strong> Derrotó a Serena Williams en la final</li>
+                <li><strong>Abierto de Australia 2019:</strong> Derrotó a Petra Kvitová en la final</li>
+                <li><strong>US Open 2020:</strong> Derrotó a Victoria Azarenka en la final</li>
+                <li><strong>Abierto de Australia 2021:</strong> Derrotó a Jennifer Brady en la final</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Reconocimientos y Premios</h2>
+            <ul class="achievement-list">
+                <li><strong>2018:</strong> Premio a la Deportista del Año de la ESPY</li>
+                <li><strong>2019:</strong> Premio a la Mejor Atleta Femenina del Año de la AP</li>
+                <li><strong>2020:</strong> Nombrada una de las 100 personas más influyentes por TIME</li>
+                <li><strong>2020:</strong> Premio a la Personalidad Deportiva del Año de la BBC</li>
+                <li><strong>2021:</strong> Premio Laureus a la Deportista del Año</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Actividades Filantrópicas</h2>
+            <ul class="achievement-list">
+                <li>Fundadora de Play Academy con Naomi Osaka en asociación con Nike y Laureus Sport for Good</li>
+                <li>Donó sus premios en metálico para apoyar la educación sobre el tenis en Haití</li>
+                <li>Participó en el movimiento Black Lives Matter y apoyó a las víctimas de la violencia racial</li>
+                <li>Defensora de la salud mental en el deporte</li>
+            </ul>
+        </div>
+        
+        <div class="section">
+            <h2 class="section-title">Patrocinadores</h2>
+            <ul class="achievement-list">
+                <li>Nike (Ropa y calzado)</li>
+                <li>Yonex (Raquetas)</li>
+                <li>Nissin Foods</li>
+                <li>Citizen Watch</li>
+                <li>Workday</li>
+                <li>Louis Vuitton</li>
+                <li>Hyperice</li>
+                <li>Sweetgreen</li>
+            </ul>
+        </div>
+        
+        <div class="footer">
+            <p>Documento generado el 2025 | Daysi Britos</p>
+            <p>Este es un documento simulado con fines educativos</p>
+        </div>
+    </div>
+</body>
+</html>
